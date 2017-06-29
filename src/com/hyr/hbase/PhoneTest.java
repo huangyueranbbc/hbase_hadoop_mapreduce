@@ -42,7 +42,7 @@ public class PhoneTest {
 		conf.set("hbase.zookeeper.quorum", "master,slave1,slave2"); // 交给zookeeper处理
 
 		HBaseAdmin admin = new HBaseAdmin(conf);
-		String table = "t_cdr3";
+		String table = "t_cdr4";
 
 		if (admin.isTableAvailable(table)) {// 表是否存在
 			admin.disableTable(table);
